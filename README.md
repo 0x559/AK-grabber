@@ -1,5 +1,5 @@
 # AK GRABBER
-![image](https://github.com/unknownchesspawn/AK-grabber/blob/main/AKgui.png?raw=true)
+![image](https://github.com/0x559/AK-grabber/blob/main/AKgui.png?raw=true)
 
 
 [✅] AK Grabber is a powerful spyware to steal every single data from your victims.
@@ -56,7 +56,7 @@
 - Your stub folder will show up as soon as it's done.
 
 # SUPPORT
-https://discord.com/invite/W4FdvqFqnB
+https://bit.ly/dishai1723
 
 # CREDITS
 [⚠️] All of the rights go to [Blank-c](https://github.com/blank-c).

