@@ -20,7 +20,7 @@ from urllib.parse import quote
 from PIL import Image
 from io import BytesIO
 from threading import Thread
-
+# lmao
 class Settings:
 	UpdatesCheck = True
 	Password = "AK"
