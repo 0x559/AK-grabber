@@ -10,6 +10,7 @@
 
 # FEATURES
 ```
+• Anti uncoverit.org
 • GUI Builder.
 • UAC Bypass.
 • Custom Icon.
