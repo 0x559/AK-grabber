@@ -105,8 +105,8 @@ def ReadSettings() -> tuple[dict, str]:
     return (settings, injection)
 
 def EncryptString(plainText: str) -> str:
-    encoded = base64.b16encode(plainText.encode()).decode()[::-1]
-    return "base64.b16decode(\"{}\"[::-1]).decode()".format(encoded)
+    encoded = base64.b16encode(plainText[::-1].encode()).decode()[::-1]
+    return "base64.b16decode(\"{}\"[::-1]).decode()[::-1]".format(encoded)
 
 def junk(path: str) -> None:
     with open(path) as file:
